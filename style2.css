@@ -1,0 +1,59 @@
+
+        body {
+            font-family: ‘Inter’, sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        /* Custom blue for primary elements */
+        .bg-primary-blue {
+            background-color: #3B82F6; /* A nice shade of blue */
+        }
+        .text-primary-blue {
+            color: #3B82F6;
+        }
+        .border-primary-blue {
+            border-color: #3B82F6;
+        }
+        .hello{
+            background-color:#3B82F6; /* A nice shade of blue */ ;
+            
+        }
+        #accor{
+            width: 100%;
+            height: 10;
+            display: block;
+            justify-content: center;
+        }
+        #tit{
+            justify-content: center;
+            text-align: center;
+            background-color: bisque;
+        }
+        
+        .bg-white img {
+            display: flex;
+            flex-direction: row;
+        }
+        .goods{
+            display: flex;
+            width: 100%;
+            height: auto;
+        }
+        #head{
+            text-align: center;
+            background-color: wheat;
+            width: 100%;
+
+        }
+        #count{
+            font-family: algerian;
+
+        }
+        #pro2{
+            display: flex;
+
+        }

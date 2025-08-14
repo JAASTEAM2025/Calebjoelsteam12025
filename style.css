@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    border-radius: 50%;
+}
+
+/* first section styling */
+.hero{
+    width: 100%;
+    height: 65vh;
+}
+.hero nav{
+    width: 100%;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    box-shadow: 2px 2px 2px 2px #0a0a0a15;
+    background: #ffffff;
+    align-items: center;
+}
+.hero nav .brand img{
+    background-color: #808080;
+}
+.hero nav .brand span{
+    font-size: 28px;
+    font-weight: 500;
+    font-family:algerian;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 2px;
+    color: #424242;
+}
+
+.hero nav .nav-links{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.hero nav .nav-links a{
+    color: #3b3b3b;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+.hero nav .nav-links a::after{
+    width: 0%;
+    height: 2px;
+    display: block;
+    background: #3b3b3b;
+    content: " ";
+}
+.hero nav .nav-links #active::after{
+    width: auto;
+}
+.hero nav .nav-links #inactive:hover::after{
+    width: 100%;
+    transition: 0.5s ease-in;
+}
+
+.hero .layout{
+    position: relative;
+    top: -50%;
+    left: -20%;
+    transform: translate(20%, 50%);
+    width: 100%;
+    display: flex;
+    padding: 25px;
+    height: 70vh;
+    align-items: center;
+    
+}
+.hero .layout .abt-description{
+    width: 50%;
+    height:fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.hero .layout .abt-description p{
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3d3d3d;
+    
+}
+.hero .layout .abt-description h1{
+    font-size: 68px;
+    color: #3d3d3d;
+    width: 420px;
+    line-height: 62px;
+}
+.hero .layout .abt-description h1 span{
+    color: #ad02f0;
+}
+.hero .layout .abt-description .greetings{
+    margin-top: 50px;
+}
+.hero .layout .abt-description .bio{
+    width: 550px;
+    
+}
+.hero .layout .abt-description .cta{
+    width: 300px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+}
+.hero .layout .abt-description .cta a{
+    text-decoration: none;
+    margin-left: 12px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px 2px #0a0a0a31;
+}
+.hero .layout .abt-description .cta #gt{
+    background: #ffffff;
+    color: #3b3b3b;
+}
+.hero .layout .abt-description .cta #bp{
+    background-color: #3b3b3b;
+    color: #ffffff;
+}
+
+.hero .layout .profile {
+    width: 50%;
+    height:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.hero .layout .profile .bgcircle{
+    border: 4px dotted #1e79b6;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.hero .layout .profile .bgcircle img{
+    background: #808080;
+}
+
+/* end of first section {hero section} */
+
+/* start of second section {Skills} */
+
+.skills{
+    margin-top: 10px;
+    width: 100%;
+    height: 40vh;
+    padding: 0 25px;
+    position: relative;
+}
+.skills h1{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: #3b3b3b;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.skills .skillsets{
+    width: 100%;
+    padding: 15px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.skills .skillsets .skillset h3{
+    color: #3b3b3b;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skills .skillsets .skillset ul{
+    list-style-type: none;
+    line-height: 34px;
+    margin-top: 10px;
+}
+.skills .skillsets .skillset ul li{
+    margin-left: 10px;
+    font-size: 20px;
+    color: #636363;
+}
+
+/* end of second section {Skills} */
+
+/*  start of third section {Experiences} */
+
+.experience{
+    width: 100%;
+    height: 45vh;
+    padding: 15px 25px;
+    align-items: center;
+    margin-top: 10px;
+}
+.experience h1{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: #3b3b3b;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.experience .listing{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.experience .listing table th{
+    padding: 0 5px;
+    text-align: left;
+    color: #3b3b3b;
+    font-weight: 600;
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.experience .listing table td{
+    padding: 0 10px;
+    top: -10px;
+    font-size: 20px;
+    color: #636363;
+}
+
+/* end of third section {experience} */
+
+/* start of 4th section {footer} */
+
+footer{
+    width: 100%;
+    position:relative;
+    padding: 20px 25px;
+    background: #424242;
+    color: #ffffff;
+    bottom: 0;
+    clear: both;
+
+}
+footer .top-wrap{
+    width: 100%;
+    height:32%;
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .top-wrap .useful-links{
+    display: block;
+    line-height: 15px; 
+}
+footer .top-wrap .useful-links a{
+    
+     color:white;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 400;
+     
+}
+    footer .top-wrap .useful-links a::after{
+        width: 0%;
+        height: 2px;
+        display: block;
+        background: #ffffff;
+        content: " ";
+    }
+        footer .top-wrap .useful-links a:hover::after{
+            width: 100%;
+            transition: 0.5s ease-in;
+        }
+
+
+/* end of 4th section {footer*} */
